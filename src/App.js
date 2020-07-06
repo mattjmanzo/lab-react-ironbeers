@@ -19,7 +19,10 @@ class App extends Component() {
           <Route exact path="/all-beers" render={() => <AllBeers />} />
           <Route exact path="/random-beer" />
           <Route exact path="/new-beer" />
-          <Route exact path="/beers/:id" />
+          <Route 
+            exact 
+            path="/beers/:id" 
+            render={(props) => <EachBeer {...props} />
         </Switch>
       </div>
     );
